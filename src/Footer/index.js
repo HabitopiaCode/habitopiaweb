@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ThirdPartyPasswordless from "supertokens-auth-react/recipe/thirdpartypasswordless";
 
 export default function Footer() {
-    let [showSMSMessage, setShowSMSMessage] = React.useState(false);
-    React.useEffect(() => {
-        function checkLoginAttemptInfo() {
+    let [showSMSMessage, setShowSMSMessage] = useState(false);
+    
+    useEffect(() => {
+        function checkLoginAttemptInfo(): void {
             ThirdPartyPasswordless.getPasswordlessLoginAttemptInfo().then((info) => {
                 if (info !== undefined && info.contactMethod === "PHONE") {
                     setShowSMSMessage(true);
@@ -18,6 +19,7 @@ export default function Footer() {
             clearInterval(intervalId);
         };
     }, []);
+    
     return (
         <div
             style={{
