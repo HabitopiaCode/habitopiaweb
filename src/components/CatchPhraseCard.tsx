@@ -7,30 +7,34 @@ type Props = {
     text: string;
     perks: string[];
     image: string;
-  }
-}
+  };
+  number: number;
+};
 
 const CatchPhraseCard = (props: Props) => {
+  const { catchPhrase, number } = props;
   return (
     <Card>
-      <div>
+      <div className="catch_phrase">
+        <div>
+          <h5>{number}. {catchPhrase.title}</h5>
+        </div>
+        <div className="content">
           <div>
-            <h5>{props.catchPhrase.title}</h5>
+            {catchPhrase.text && <p>{catchPhrase.text}</p>}
+            <ul>
+              {catchPhrase.perks.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
           </div>
           <div>
-            <div>
-              {props.catchPhrase.text && (<p>{props.catchPhrase.text}</p>)}
-              <ul>
-                {props.catchPhrase.perks.map((item, index) => <li key={index}>{item}</li>)}
-              </ul>
-            </div>
-            <div>
-              <img src={props.catchPhrase.image} alt="" />
-            </div>
+            <img src={catchPhrase.image} alt="" />
           </div>
+        </div>
       </div>
     </Card>
-  )
+  );
 }
 
 export default CatchPhraseCard

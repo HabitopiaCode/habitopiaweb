@@ -14,7 +14,7 @@ type Props = {
 const TestimonialRow = (props: Props) => {
   return (
     <div className="container">
-      <div>
+      <div className="testimonial_row">
         <TestimonialCard testimonial={props.testimonials[0]} />
         <TestimonialCard testimonial={props.testimonials[1]} />
       </div>

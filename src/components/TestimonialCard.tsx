@@ -3,11 +3,11 @@ import Card from "./core/Card/";
 
 type Props = {
     testimonial: {
-        avatar?: string;
-        content: string;
-        name: string;
-        job: string;
-        color: string;
+    avatar?: string;
+    content: string;
+    name: string;
+    job: string;
+    color: string;
     }
 }
 
@@ -15,16 +15,22 @@ const TestimonialCard = (props: Props) => {
 
     const { testimonial } = props
   return (
-    <Card>
+    <Card bg={testimonial.color}>
+      <div className="testimonial">
         <div>
-            <div>
-                {testimonial.avatar ? <img src={testimonial.avatar} /> : <img src={""} />}
-                {`${testimonial.name}, ${testimonial.job}`}
-            </div>
-            <div>{testimonial.content}</div>
+          {testimonial.avatar ? (
+            <img src={testimonial.avatar} alt="Testimonial Avatar" />
+          ) : (
+            <img src={""} alt="Testimonial Avatar" />
+          )}
+          <p>{`${testimonial.name}, ${testimonial.job}`}</p>
         </div>
+        <div>
+          <p>{testimonial.content}</p>
+        </div>
+      </div>
     </Card>
-  )
+  );
 }
 
 export default TestimonialCard

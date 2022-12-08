@@ -1,4 +1,5 @@
 import React from 'react'
+import HabyButton from "./HabyButton";
 
 type Props = {
   vp: {
@@ -6,25 +7,29 @@ type Props = {
       header: string;
       content: string;
       cta: string;
+      reverse?: boolean;
   }
 }
 
 const ValuePropsRow = (props: Props) => {
   const { vp } = props;
+  const newStyles = vp.reverse ? "reversed" : ""
   return (
     <div className="container">
-      <div>
+      <div className={`value_prop ${newStyles}`}>
         <div>
-          <h3>{vp.header}</h3>
+          <h3 dangerouslySetInnerHTML={{ __html: vp.header }}></h3>
           <p>{vp.content}</p>
-          <a href="#">{vp.cta}</a>
+          <HabyButton location="#" minWidth={350}>
+            {vp.cta}
+          </HabyButton>
         </div>
         <div>
-          <img src="" alt="" />
+          <img src={vp.media} alt="" />
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default ValuePropsRow

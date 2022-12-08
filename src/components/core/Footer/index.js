@@ -1,39 +1,49 @@
 import React from "react";
+import moment from 'moment'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { brands } from '@fortawesome/fontawesome-svg-core/import.macro' // <-- import styles to be used
+import logo from '../../../assets/logo.svg'
 
 export default function Footer() {
     
     return (
-      <div style={styles.footer}>
+      <div className="footer">
         <div className="container">
-          <div style={styles.footerInnerWrap}>
-            <div>Logo</div>
-            <div>Pages</div>
+          <div className="footer_wrap">
+            <div>
+              <img src={logo} alt="Habitopia logo" />
+            </div>
+            <div className="footer_links">
+              <span>
+                <a href="#">Privacy</a>
+              </span>
+              <span>
+                <a href="#">Community</a>
+              </span>
+              <span>
+                <a href="#">Chat with us!</a>
+              </span>
+            </div>
           </div>
-          <div style={{...styles.footerInnerWrap, ...{marginTop: "40px"}}}>
-            <div>&copy; Habitopia Inc. 2022</div>
-            <div>Social Media</div>
+          <div className="footer_wrap">
+            <div>&copy; Habitopia Inc. {moment().format("YYYY")}</div>
+            <div className="icon">
+              <span>
+                <FontAwesomeIcon icon={brands("twitter")} />
+              </span>
+              <span>
+                <FontAwesomeIcon icon={brands("facebook")} />
+              </span>
+              <span>
+                <FontAwesomeIcon icon={brands("instagram")} />
+              </span>
+              <span>
+                <FontAwesomeIcon icon={brands("linkedin")} />
+              </span>
+            </div>
           </div>
         </div>
       </div>
     );
-}
-
-const styles = {
-    footer: {
-        display: "flex",
-        width: "100%",
-        alignItems: "center",
-        justifyContent: "center",
-        alignSelf: "flex-end",
-        flexDirection: "column",
-        background: "#000000",
-        color: "#fff",
-        padding: "40px 0"
-    },
-    footerInnerWrap: {
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "space-between"
-    }
 }
 

@@ -8,9 +8,9 @@ type Props = {}
 const BuildingHabitsCards = (props: Props) => {
     
   return (
-    <div>
+    <div className="cards">
       {buildingHabits.map((catchPhrase, index) => (
-        <CatchPhraseCard key={index} catchPhrase={catchPhrase} />
+        <CatchPhraseCard key={index} catchPhrase={catchPhrase} number={index+1} />
       ))}
     </div>
   );

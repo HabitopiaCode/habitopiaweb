@@ -1,7 +1,10 @@
+import remy from '../assets/remy.svg'
+import atomic_habits from '../assets/atomic_habits.svg'
+
 const testimonials = {
   one: [
     {
-      avatar: "",
+      avatar: atomic_habits,
       name: "Atomic Habits by James Clear",
       job: "",
       content:
@@ -9,7 +12,7 @@ const testimonials = {
       color: "#DD09FF40",
     },
     {
-      avatar: "",
+      avatar: remy,
       name: "Remy",
       job: "Founder @ Habitopia",
       content:

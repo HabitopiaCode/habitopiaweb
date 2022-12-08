@@ -1,15 +1,17 @@
 import React from 'react'
+import haby from '../assets/haby.svg'
+import habo from '../assets/habo.svg'
 
 type Props = {}
 
 const HabyAndHabo = (props: Props) => {
   return (
-    <div>
+    <div className="haby_and_habo">
       <div>
-        <img src="" alt="" />
+        <img src={haby} alt="Haby" />
       </div>
       <div>
-        <img src="" alt="" />
+        <img src={habo} alt="Habo" />
       </div>
     </div>
   );

@@ -1,12 +1,15 @@
 import React from 'react'
+import ValuePropsRow from "./ValuePropsRow";
+import { heroVp } from "../content/";
 
 type Props = {}
 
 const HeroRow = (props: Props) => {
   return (
-    <div style={styles.main}>
+    <div className="hero">
       <div className="container">
-        <div>
+        <ValuePropsRow vp={heroVp} />
+        {/* <div>
           <h1>
             Habit-building made easy, socially-bonding, rewarding, and fun!
           </h1>
@@ -17,21 +20,11 @@ const HeroRow = (props: Props) => {
           </p>
           <a href="#">Build your dream habit!</a>
         </div>
-        <div>Section 2</div>
+        <div>Section 2</div> */}
       </div>
     </div>
   );
 }
 
-const styles = {
-  main: {
-    display: "flex",
-    flexDirection: "column",
-    background: "#000",
-    color: "#fff",
-    width: "100%",
-    alignItems: "center"
-  }
-} as const;
 
 export default HeroRow

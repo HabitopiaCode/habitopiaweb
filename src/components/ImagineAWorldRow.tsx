@@ -1,7 +1,7 @@
 import React from 'react'
 import TestimonialRow from "./TestimonialRow";
 import ValuePropsRow from "./ValuePropsRow";
-import HabiButton from "./HabiButton";
+import HabyButton from "./HabyButton";
 import { testimonials, valueProps } from '../content/'
 
 type Props = {}
@@ -9,11 +9,16 @@ type Props = {}
 const ImagineAWorldRow = (props: Props) => {
   const { one } = testimonials;
   return (
-    <div style={styles.main}>
+    <div className="imagine_a_world">
       <div className="container">
-        <h1>Imagine a world hypersculpted for habit-building...</h1>
-        <HabiButton location={""}>Join the move</HabiButton>
-        <div>IMAGE GOES HERE</div>
+        <h1>
+          Imagine a <span style={{ color: "#DD09FF" }}>world</span>{" "}
+          hypersculpted for habit-building...
+        </h1>
+        <HabyButton location={""}>Join the move</HabyButton>
+        <div className="large_img">
+          <img src="https://via.placeholder.com/800x400" alt="Imagine" />
+        </div>
         <TestimonialRow testimonials={one} />
         <ValuePropsRow vp={valueProps[0]} />
         <TestimonialRow testimonials={one} />
@@ -25,16 +30,5 @@ const ImagineAWorldRow = (props: Props) => {
     </div>
   );
 }
-
-const styles = {
-  main: {
-    background: "linear-gradient(180deg, rgb(221 9 255 / 15%), rgb(231 18 3 / 15%), rgb(9 66 255 / 15%), rgb(99 21 58 / 15%))",
-    display: "flex",
-    padding: "150px 0",
-    width: "100%",
-    flexDirection: "column",
-    alignItems: "center"
-  }
-} as const;
 
 export default ImagineAWorldRow
