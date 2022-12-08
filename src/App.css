@@ -32,3 +32,8 @@
     font-weight: bold;
     font-size: 17px;
 }
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+}

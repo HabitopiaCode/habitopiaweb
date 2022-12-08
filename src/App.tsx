@@ -3,10 +3,10 @@ import SuperTokens, { SuperTokensWrapper, getSuperTokensRoutesForReactRouterDom 
 import EmailVerification from "supertokens-auth-react/recipe/emailverification";
 import ThirdPartyPasswordless from "supertokens-auth-react/recipe/thirdpartypasswordless";
 import Session, { SessionAuth } from "supertokens-auth-react/recipe/session";
-import Home from "./Home";
+import Home from "./Pages/Home";
 import { Routes, BrowserRouter as Router, Route } from "react-router-dom";
-import Footer from "./Footer";
-import Header from "./Header";
+import Footer from "./components/core/Footer";
+import Header from "./components/core/Header";
 
 export function getApiDomain(): string {
     const apiPort = process.env.REACT_APP_API_PORT || 3001;
@@ -52,24 +52,14 @@ function App() {
             <div className="App">
                 <Router>
                     <Header />
-                    <div className="gif-container">
+                    {/* <div className="gif-container"> */}
+                    <div>
                         <Routes>
                             {/* This shows the login UI on "/auth" route */}
                             {getSuperTokensRoutesForReactRouterDom(require("react-router-dom"))}
                             
                             <Route
                                 path="/"
-                                element={
-                                    /* This protects the "/" route so that it shows 
-                                        <Home /> only if the user is logged in.
-                                        Else it redirects the user to "/auth" */
-                                        <SessionAuth>
-                                        <Home />
-                                        </SessionAuth>
-                                }
-                            />
-                            <Route
-                                path="/points"
                                 element={
                                     /* This protects the "/" route so that it shows 
                                         <Home /> only if the user is logged in.
