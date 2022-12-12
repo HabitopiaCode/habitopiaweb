@@ -25,7 +25,7 @@ const ValuePropsRow = (props: Props) => {
           </HabyButton>
         </div>
         <div>
-          <img src={vp.media} alt="" />
+          <img style={{maxWidth: "340px", borderRadius: 15}} src={vp.media} alt="" />
         </div>
       </div>
     </div>

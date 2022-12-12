@@ -1,13 +1,20 @@
 import party from '../assets/party.svg';
-import water_sports from '../assets/water_sports.svg';
+import above_the_fold_gif_general from '../assets/habitopia_above_the_fold.gif';
+
+import social_accountability_image from '../assets/social_accountability.png';
+import gamification_image from '../assets/habitopia_gamification.png';
+import financial_reward_gif from '../assets/habitopia_financial_rewards.gif';
+
+
+
 const valueProps = [
   {
     header:
-      "..., supercharged <span style='color: #E78A1E'>with social accountability</span>, 🤗",
+      "...supercharged <span style='color: #E78A1E'>with social accountability</span>, 🤗",
     content:
       "Win games by having your friends and likeminded teammates from all around the world as your source of accountability!",
     cta: "Meet likeminded people!",
-    media: party,
+    media: social_accountability_image,
   },
   {
     header:
@@ -15,7 +22,7 @@ const valueProps = [
     content:
       "Customize your avatar, join competitive leagues, unlock titles and much more!",
     cta: "Compete and cooperate!",
-    media: party,
+    media: gamification_image,
     reverse: true,
   },
   {
@@ -23,7 +30,7 @@ const valueProps = [
     content:
       "Build any habits by competing and cooperating in fun challenges with friends and accountability partners from all around the world and get rewarded!",
     cta: "Claim real-life rewards!",
-    media: party,
+    media: financial_reward_gif,
   },
 ];
 
@@ -33,7 +40,7 @@ const heroVp = {
   content:
     "Win games by having your friends and likeminded teammates from all around the world as your source of accountability!",
   cta: "Build your dream habit!",
-  media: water_sports,
+  media: above_the_fold_gif_general,
 };
 
 export { valueProps, heroVp };

@@ -68,6 +68,10 @@
     text-align: center;
 }
 
+.haby_button:hover {
+    background-color: orange;
+}
+
 /* Hero */
 .hero {
     display: flex;
@@ -147,7 +151,7 @@
 
 /* Imagine a World */
 .imagine_a_world {
-    background: linear-gradient(180deg, rgb(221 9 255 / 15%), rgb(231 18 3 / 15%), rgb(9 66 255 / 15%), rgb(99 21 58 / 15%));
+    background: linear-gradient(180deg, rgb(91 26 197 / 30%), rgb(231 18 3 / 15%), rgb(9 66 255 / 15%), rgb(99 21 58 / 15%));
     display: flex;
     padding: 150px 0;
     width: 100%;
@@ -168,10 +172,18 @@
     width: 300px;
 }
 
-.imagine_a_world .large_img {
+.imagine_a_world .video_wrapper {
     text-align: center;
     margin-bottom: 60px;
+    justify-self: center;
 }
+
+.imagine_a_world .video {
+    /* justify-self: center; */
+    max-width: 600px;
+    /* align-self: center; */
+}
+
 
 .testimonial_row {
     display: flex;

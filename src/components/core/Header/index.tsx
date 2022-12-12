@@ -16,7 +16,7 @@ export default function Header () {
             </div>
             <div>
               <HabyButton bg_color={""} txt_color={""} location={""}>
-                Log In
+                Get started
               </HabyButton>
             </div>
           </div>

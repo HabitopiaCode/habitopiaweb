@@ -12,7 +12,7 @@ const HabButton = (props: Props) => {
   const { minWidth } = props
   const setWidth = minWidth ? { minWidth: `${minWidth}px`} : {}
   return (
-    <a href="#" className="haby_button" style={setWidth}>
+    <a href="https://ossrab6i4qi.typeform.com/to/L2OsMtPa" className="haby_button" style={setWidth}>
         {props.children}
     </a>
   )
