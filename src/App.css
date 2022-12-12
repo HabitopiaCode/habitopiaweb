@@ -49,6 +49,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+.header_wrap img {
+    max-width: 250px;
+    width: 100%;
 }
 
 .container {
@@ -66,6 +74,8 @@
     border-radius: 10px;
     display: inline-block;
     text-align: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Hero */
@@ -86,7 +96,8 @@
     flex-direction: column;
     color: #fff;
     align-items: center;
-    padding: 80px 0;
+    padding: 80px 20px;
+    box-sizing: border-box;
 }
 
 .building_habits h3 {
@@ -100,11 +111,16 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+    width: 100%;
+}
+
+.building_habits>.cards > div {
+    /* width: 100%; */
 }
 
 .catch_phrase {
-    min-width: 340px;
-    min-height: 180px;
+    width: 100%;
+    max-width: 300px;
     color: #000;
     padding: 20px;
     box-sizing: border-box;
@@ -128,6 +144,7 @@
 
 .catch_phrase .content img {
     margin-top: -30px;
+    width: 100%;
 }
 
 .catch_phrase ul {
@@ -153,6 +170,8 @@
     width: 100%;
     flex-direction: column;
     align-items: center;
+    padding: 60px 20px;
+    box-sizing: border-box;
 }
 
 .imagine_a_world h1 {
@@ -165,20 +184,26 @@
 .imagine_a_world > div > .haby_button {
     margin: 0 auto 60px;
     display: block;
-    width: 300px;
+    max-width: 300px;
 }
 
 .imagine_a_world .large_img {
     text-align: center;
     margin-bottom: 60px;
+    padding: 0 20px;
+}
+
+.imagine_a_world .large_img img {
+    width: 100%;
 }
 
 .testimonial_row {
     display: flex;
     justify-content: center;
     gap: 20px;
-    max-width: 650px;
+    /* max-width: 650px; */
     margin: auto;
+    padding: 0 20px;
 }
 
 .testimonial_row > div:last-child .testimonial {
@@ -186,10 +211,11 @@
 }
 
 .testimonial {
-    min-width: 340px;
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 10px;
+    max-width: 350px;
 }
 
 .value_prop {
@@ -197,6 +223,8 @@
     margin: 100px auto;
     display: flex;
     flex-direction: row;
+    padding: 0 20px;
+    gap: 20px;
 }
 
 .value_prop.reversed {
@@ -237,11 +265,16 @@
 
 .value_prop p {}
 
+.value_prop img {
+    width: 100%;
+    max-width: 400px;
+}
+
 /* Join Habitopians */
 .habitopians {
     background: #000;
     color: #fff;
-    padding: 80px 0;
+    padding: 80px 20px;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -262,7 +295,8 @@
 }
 
 .haby_and_habo img {
-    width: 275px;
+    width: 100%;
+    max-width: 275px;
     height: auto;
 }
 
@@ -283,6 +317,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0 20px;
 }
 
 .footer_wrap:first-child {
@@ -311,4 +346,47 @@
     display: inline-block;
     font-size: 20px;
     margin-left: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    .testimonial_row, .value_prop {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .value_prop.reversed {
+        flex-direction: column-reverse;
+    }
+
+    .value_prop>div:first-child {
+        align-items: unset;
+    }
+
+    .value_prop.reversed>div:first-child {
+        align-items: unset;
+    }
+
+    .footer_wrap, .footer_wrap:first-child {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer_wrap:last-child {
+        margin: 0;
+    }
+
+    .footer_wrap > div {
+        margin-bottom: 15px;
+    }
+
+    .footer_links span:first-child, .icon span:first-child {
+        margin: 0;
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+    .haby_and_habo {
+        flex-direction: column;
+    }
 }

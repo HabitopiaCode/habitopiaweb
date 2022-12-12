@@ -5,12 +5,12 @@ type Props = {
   location: string;
   bg_color?: string;
   txt_color?: string;
-  minWidth?: number;
+  maxWidth?: number;
 };
 
 const HabButton = (props: Props) => {
-  const { minWidth } = props
-  const setWidth = minWidth ? { minWidth: `${minWidth}px`} : {}
+  const { maxWidth } = props
+  const setWidth = maxWidth ? { maxWidth: `${maxWidth}px`} : {}
   return (
     <a href="#" className="haby_button" style={setWidth}>
         {props.children}

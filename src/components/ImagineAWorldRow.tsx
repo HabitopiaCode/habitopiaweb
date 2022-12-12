@@ -3,6 +3,7 @@ import TestimonialRow from "./TestimonialRow";
 import ValuePropsRow from "./ValuePropsRow";
 import HabyButton from "./HabyButton";
 import { testimonials, valueProps } from '../content/'
+import yoga from '../assets/yoga.jpg'
 
 type Props = {}
 
@@ -17,7 +18,7 @@ const ImagineAWorldRow = (props: Props) => {
         </h1>
         <HabyButton location={""}>Join the move</HabyButton>
         <div className="large_img">
-          <img src="https://via.placeholder.com/800x400" alt="Imagine" />
+          <img src={yoga} alt="Imagine" />
         </div>
         <TestimonialRow testimonials={one} />
         <ValuePropsRow vp={valueProps[0]} />

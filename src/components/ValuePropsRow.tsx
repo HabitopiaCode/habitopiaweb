@@ -20,7 +20,7 @@ const ValuePropsRow = (props: Props) => {
         <div>
           <h3 dangerouslySetInnerHTML={{ __html: vp.header }}></h3>
           <p>{vp.content}</p>
-          <HabyButton location="#" minWidth={350}>
+          <HabyButton location="#" maxWidth={300}>
             {vp.cta}
           </HabyButton>
         </div>

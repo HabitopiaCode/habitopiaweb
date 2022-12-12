@@ -10,7 +10,7 @@ const JoinHabitopiansRow = (props: Props) => {
       <div className="container">
         <h1>Join Habitopians from all around the world!</h1>
         <p>Get rewarded and have fun by building habits!</p>
-        <HabyButton location={""} minWidth={250}>
+        <HabyButton location={""} maxWidth={300}>
           Talk to Haby and Habo!
         </HabyButton>
         <HabyAndHabo />
