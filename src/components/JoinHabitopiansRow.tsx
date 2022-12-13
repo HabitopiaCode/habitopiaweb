@@ -14,7 +14,7 @@ const JoinHabitopiansRow = (props: Props) => {
           {/* <HabyButton location={""} maxWidth={300}>
             Talk to Haby and Habo!
           </HabyButton> */}
-          <HabyButton location={""} maxWidth={300}>
+          <HabyButton location={"https://docs.google.com/forms/d/e/1FAIpQLSf7YGyG12qvYqsIIG6KrWEAdlb3y_uoymVL1f9pmrMo-wVegA/viewform?usp=sf_link"} maxWidth={300}>
             Download the app!
           </HabyButton>
         </div>

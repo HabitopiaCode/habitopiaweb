@@ -12,7 +12,7 @@ const HabButton = (props: Props) => {
   const { maxWidth } = props
   const setWidth = maxWidth ? { maxWidth: `${maxWidth}px`} : {}
   return (
-    <a href="https://ossrab6i4qi.typeform.com/to/L2OsMtPa" className="haby_button" style={setWidth}>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf7YGyG12qvYqsIIG6KrWEAdlb3y_uoymVL1f9pmrMo-wVegA/viewform?usp=sf_link" className="haby_button" style={setWidth}>
         {props.children}
     </a>
   )
