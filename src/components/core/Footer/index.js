@@ -15,31 +15,35 @@ export default function Footer() {
             </div>
             <div className="footer_links">
               <span>
-                <a href="#">Privacy</a>
+                <a href="https://privacy-policy-15ac7c.webflow.io/">Privacy</a>
               </span>
               <span>
-                <a href="#">Community</a>
+                <a href="https://join.slack.com/t/habitopiacommunity/shared_invite/zt-1lt38wv80-n0TkCJLFIqawySgipex1~A">Community</a>
               </span>
               <span>
-                <a href="#">Chat with us!</a>
+                <a href="https://zcal.co/remymess/habitopia">Chat with us!</a>
               </span>
             </div>
           </div>
           <div className="footer_wrap">
             <div>&copy; Habitopia Inc. {moment().format("YYYY")}</div>
             <div className="icon">
-              <span>
-                <FontAwesomeIcon icon={brands("twitter")} />
-              </span>
-              <span>
+              <a href="https://twitter.com/habitopiaapp">
+                <span>
+                  <FontAwesomeIcon icon={brands("twitter")} />
+                </span>
+              </a>
+              {/* <span>
                 <FontAwesomeIcon icon={brands("facebook")} />
-              </span>
-              <span>
-                <FontAwesomeIcon icon={brands("instagram")} />
-              </span>
-              <span>
+              </span> */}
+              <a href="https://www.instagram.com/habitopia.app/">
+                <span>
+                  <FontAwesomeIcon icon={brands("instagram")}/>
+                </span>
+              </a>
+              {/* <span>
                 <FontAwesomeIcon icon={brands("linkedin")} />
-              </span>
+              </span> */}
             </div>
           </div>
         </div>

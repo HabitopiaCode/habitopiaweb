@@ -12,6 +12,8 @@ const JoinHabitopiansRow = (props: Props) => {
         <p>Get rewarded and have fun by building habits!</p>
         <HabyButton location={""} maxWidth={300}>
           Talk to Haby and Habo!
+        <HabyButton location={""} minWidth={250}>
+          Download the app!
         </HabyButton>
         <HabyAndHabo />
       </div>

@@ -56,7 +56,7 @@ function App() {
                     <div>
                         <Routes>
                             {/* This shows the login UI on "/auth" route */}
-                            {getSuperTokensRoutesForReactRouterDom(require("react-router-dom"))}
+                            {/* {getSuperTokensRoutesForReactRouterDom(require("react-router-dom"))} */}
                             
                             <Route
                                 path="/"
