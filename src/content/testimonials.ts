@@ -25,7 +25,7 @@ const testimonials = {
       name: "Remy",
       job: "Founder @ Habitopia",
       content:
-      "I litterally spend my life building good habit, losing them, and re-implementing them.",
+      "I litterally spend my life building good habits, losing them, and re-implementing them.",
       color: "#D4BFE1",
     },
   ],

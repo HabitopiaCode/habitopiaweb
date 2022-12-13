@@ -36,7 +36,7 @@ const valueProps = [
 
 const heroVp = {
   header:
-    "Habit-building made <span style='color: #09A6FF'>easy</span>, <span style='color: #E78A1E'>socially-bonding</span>, <span style='color: #63D83A'>rewarding</span>, and <span style='color: #DD09FF'>fun!</span>",
+    "Habit-building made <span style='color: #09A6FF'>easy</span>, <span style='color: #E78A1E'>social</span>, <span style='color: #63D83A'>rewarding</span>, and <span style='color: #DD09FF'>fun!</span>",
   content:
     "Win games by having your friends and likeminded teammates from all around the world as your source of accountability!",
   cta: "Build your dream habit!",

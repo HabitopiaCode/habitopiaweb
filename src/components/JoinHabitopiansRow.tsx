@@ -11,9 +11,9 @@ const JoinHabitopiansRow = (props: Props) => {
         <h1>Join Habitopians from all around the world!</h1>
         <p>Get rewarded and have fun by building habits!</p>
         <div className="join_cta">
-          <HabyButton location={""} maxWidth={300}>
+          {/* <HabyButton location={""} maxWidth={300}>
             Talk to Haby and Habo!
-          </HabyButton>
+          </HabyButton> */}
           <HabyButton location={""} maxWidth={300}>
             Download the app!
           </HabyButton>
