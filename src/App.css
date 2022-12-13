@@ -203,9 +203,8 @@
 }
 
 .imagine_a_world .video {
-    /* justify-self: center; */
+    width: 100%;
     max-width: 600px;
-    /* align-self: center; */
 }
 
 
@@ -298,6 +297,12 @@
     margin: 40px 0 40px;
 }
 
+.join_cta {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
 /* Haby and Habo */
 .haby_and_habo {
     display: flex;
@@ -360,6 +365,14 @@
     margin-left: 15px;
 }
 
+.icon span a {
+    color: #fff;
+}
+
+.icon span a:hover {
+    color: #D2FF09;
+}
+
 @media screen and (max-width: 767px) {
     .testimonial_row, .value_prop {
         flex-direction: column;
@@ -400,5 +413,12 @@
 @media screen and (max-width: 575px) {
     .haby_and_habo {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .join_cta {
+        flex-direction: column;
+        align-items: center;
     }
 }

@@ -28,19 +28,19 @@ export default function Footer() {
           <div className="footer_wrap">
             <div>&copy; Habitopia Inc. {moment().format("YYYY")}</div>
             <div className="icon">
-              <a href="https://twitter.com/habitopiaapp">
                 <span>
+              <a href="https://twitter.com/habitopiaapp">
                   <FontAwesomeIcon icon={brands("twitter")} />
-                </span>
               </a>
+                </span>
               {/* <span>
                 <FontAwesomeIcon icon={brands("facebook")} />
               </span> */}
-              <a href="https://www.instagram.com/habitopia.app/">
                 <span>
+              <a href="https://www.instagram.com/habitopia.app/">
                   <FontAwesomeIcon icon={brands("instagram")}/>
-                </span>
               </a>
+                </span>
               {/* <span>
                 <FontAwesomeIcon icon={brands("linkedin")} />
               </span> */}
