@@ -10,7 +10,10 @@ import Header from "./components/core/Header";
 import ReactGA from 'react-ga';
 import {useEffect } from 'react';
 
-const TRACKING_ID = "G-9Z4MEV2HWJ"; // OUR_TRACKING_ID
+
+// NOTE 1: UA tracking in Google Analytics note the same as Google Analytics 4 tracking
+// NOTE 2: UA tracking will die in July 2023 I think
+const TRACKING_ID = "UA-248333187-1"; // OUR_TRACKING_ID;
 ReactGA.initialize(TRACKING_ID);
 
 export function getApiDomain(): string {
