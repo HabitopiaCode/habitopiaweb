@@ -16,7 +16,7 @@ const ImagineAWorldRow = (props: Props) => {
         <h1>
           Imagine an <span style={{ color: "#DD09FF" }}>immersive multiplayer world</span> made to build habits{" "}...
         </h1>
-        <HabyButton location={""}>Join the move</HabyButton>
+        <HabyButton location={""} analyticsName={"join_move_button"}>Join the move</HabyButton>
         <div className="large_img">
           {/* <img src={yoga} alt="Imagine" /> */}
           <div className="video_wrapper">

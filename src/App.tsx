@@ -7,6 +7,11 @@ import Home from "./Pages/Home";
 import { Routes, BrowserRouter as Router, Route } from "react-router-dom";
 import Footer from "./components/core/Footer";
 import Header from "./components/core/Header";
+import ReactGA from 'react-ga';
+import {useEffect } from 'react';
+
+const TRACKING_ID = "G-9Z4MEV2HWJ"; // OUR_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
 
 export function getApiDomain(): string {
     const apiPort = process.env.REACT_APP_API_PORT || 3001;
@@ -47,6 +52,11 @@ SuperTokens.init({
 });
 
 function App() {
+    // Adding Google Analytics tracking
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search);
+      }, []);
+    
     return ( 
         <SuperTokensWrapper>
             <div className="App">
