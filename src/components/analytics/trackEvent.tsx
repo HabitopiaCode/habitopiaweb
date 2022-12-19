@@ -13,9 +13,9 @@ import ReactGA from "react-ga4";
 // eventLabel	- text	- no	- Useful for categorizing events (e.g. 'Fall Campaign')
 
 
-const trackEvent = (category="button", action = "cta", label = "landing_page") => {
+const trackEvent = (category="button") => {
   const eventTracker = () => {
-    ReactGA.event({category, action, label});
+    ReactGA.event({category, action: "cta", label: "landing_page"});
   }
   return eventTracker;
 }
