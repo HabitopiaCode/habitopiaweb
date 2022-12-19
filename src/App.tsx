@@ -7,13 +7,13 @@ import Home from "./Pages/Home";
 import { Routes, BrowserRouter as Router, Route } from "react-router-dom";
 import Footer from "./components/core/Footer";
 import Header from "./components/core/Header";
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 import {useEffect } from 'react';
 
 
 // NOTE 1: UA tracking in Google Analytics note the same as Google Analytics 4 tracking
 // NOTE 2: UA tracking will die in July 2023 I think
-const TRACKING_ID = "UA-248333187-1"; // OUR_TRACKING_ID;
+const TRACKING_ID = "G-9Z4MEV2HWJ"; // OUR_TRACKING_ID;
 ReactGA.initialize(TRACKING_ID);
 
 export function getApiDomain(): string {
@@ -57,7 +57,7 @@ SuperTokens.init({
 function App() {
     // Adding Google Analytics tracking
     useEffect(() => {
-        ReactGA.pageview(window.location.pathname + window.location.search);
+        ReactGA.send(window.location.pathname + window.location.search);
       }, []);
     
     return ( 

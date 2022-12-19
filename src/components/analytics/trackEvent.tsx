@@ -1,5 +1,4 @@
-import React from "react";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 
 // NOTES: 
@@ -14,7 +13,7 @@ import ReactGA from "react-ga";
 // eventLabel	- text	- no	- Useful for categorizing events (e.g. 'Fall Campaign')
 
 
-const setAnalyticsEventTracker = (category="button", action = "cta", label = "landing_page") => {
+const trackEvent = (category="button", action = "cta", label = "landing_page") => {
   const eventTracker = () => {
     ReactGA.event({category, action, label});
   }
@@ -22,4 +21,4 @@ const setAnalyticsEventTracker = (category="button", action = "cta", label = "la
 }
 
 
-export default setAnalyticsEventTracker;
+export default trackEvent;
