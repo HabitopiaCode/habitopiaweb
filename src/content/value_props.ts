@@ -36,9 +36,10 @@ const valueProps = [
 
 const heroVp = {
   header:
-    "Habit-building made <span style='color: #09A6FF'>easy</span>, <span style='color: #E78A1E'>social</span>, <span style='color: #63D83A'>rewarding</span>, and <span style='color: #DD09FF'>fun!</span>",
+    "<span style='color: #DD09FF'>Unlimited</span> <span style='color: #E78A1E'>accountability</span> to <span style='color: #63D83A'>better</span> <span style='color: #09A6FF'>yourself</span>",
+    //  cooperate to become a better version of yourself! <span style='color: #09A6FF'>easy</span>, <span style='color: #E78A1E'>social</span>, <span style='color: #63D83A'>rewarding</span>, and <span style='color: #DD09FF'>fun!</span>",
   content:
-    "Win games by having your friends and likeminded teammates from all around the world as your source of accountability!",
+    "Turn your habits into a multiplayer game to make them easy, fun and automatic! Join likeminded accountability partners & challengers from all around the world🌎!",
   cta: "Build your dream habit!",
   media: above_the_fold_gif_general,
 };

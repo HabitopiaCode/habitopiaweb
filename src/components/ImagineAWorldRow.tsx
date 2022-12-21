@@ -22,12 +22,12 @@ const ImagineAWorldRow = (props: Props) => {
           <div className="video_wrapper">
             <video className='video' autoPlay loop muted playsInline src={habitopiaWorldGif} />     
           </div>
-          <TestimonialRow testimonials={one} />
           <ValuePropsRow vp={valueProps[0]} />
-          <TestimonialRow testimonials={two} />
           <ValuePropsRow vp={valueProps[1]} />
-          <TestimonialRow testimonials={three} />
           <ValuePropsRow vp={valueProps[2]} />
+          <TestimonialRow testimonials={one} />
+          <TestimonialRow testimonials={two} />
+          <TestimonialRow testimonials={three} />
           <TestimonialRow testimonials={four} />
         </div>
       </div>
