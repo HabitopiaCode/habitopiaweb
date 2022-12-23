@@ -14,9 +14,9 @@ export default function Header () {
               />
             </div>
             <div>
-              <HabyButton analyticsName={"banner_get_started_button"} bg_color={""} txt_color={""} location={""}>
+              {/* <HabyButton analyticsName={"banner_get_started_button"} bg_color={""} txt_color={""} location={""}>
                 Get started
-              </HabyButton>
+              </HabyButton> */}
             </div>
           </div>
         </div>
