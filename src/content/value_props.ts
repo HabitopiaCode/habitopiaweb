@@ -36,7 +36,7 @@ const valueProps = [
 
 const heroVp = {
   header:
-    "<span style='color: #63D83A'>Better</span> <span style='color: #09A6FF'>yourself</span> with <span style='color: #DD09FF'>unlimited</span> <span style='color: #E78A1E'>accountability</span>",
+    "<span style='color: #63D83A'>Beat</span> <span style='color: #09A6FF'>procrastination</span> with <span style='color: #DD09FF'>unlimited</span> <span style='color: #E78A1E'>accountability</span>",
     //  cooperate to become a better version of yourself! <span style='color: #09A6FF'>easy</span>, <span style='color: #E78A1E'>social</span>, <span style='color: #63D83A'>rewarding</span>, and <span style='color: #DD09FF'>fun!</span>",
   content:
     "Build any habits easily by playing multiplayer accountability challenges with likeminded partners from all around the world! 🌍",
