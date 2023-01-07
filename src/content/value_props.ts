@@ -1,6 +1,6 @@
 import party from '../assets/party.svg';
-import above_the_fold_gif_general from '../assets/habitopia_above_the_fold.gif';
-
+// import above_the_fold_gif_general from '../assets/habitopia_above_the_fold.gif';
+import above_the_fold_gif_general from '../assets/habitopia_production_animation.gif';
 import social_accountability_image from '../assets/social_accountability.png';
 import gamification_image from '../assets/habitopia_gamification.png';
 import financial_reward_gif from '../assets/habitopia_financial_rewards.gif';
@@ -36,11 +36,11 @@ const valueProps = [
 
 const heroVp = {
   header:
-    "<span style='color: #DD09FF'>Unlimited</span> <span style='color: #E78A1E'>accountability</span> to <span style='color: #63D83A'>better</span> <span style='color: #09A6FF'>yourself</span>",
+    "<span style='color: #63D83A'>Better</span> <span style='color: #09A6FF'>yourself</span> with <span style='color: #DD09FF'>unlimited</span> <span style='color: #E78A1E'>accountability</span>",
     //  cooperate to become a better version of yourself! <span style='color: #09A6FF'>easy</span>, <span style='color: #E78A1E'>social</span>, <span style='color: #63D83A'>rewarding</span>, and <span style='color: #DD09FF'>fun!</span>",
   content:
-    "Turn your habits into a multiplayer game to make them easy, fun and automatic! Join likeminded accountability partners & challengers from all around the world🌎!",
-  cta: "Build your dream habit!",
+    "Build any habits easily by playing multiplayer accountability challenges with likeminded partners from all around the world! 🌍",
+  cta: "Join the move!",
   media: above_the_fold_gif_general,
 };
 

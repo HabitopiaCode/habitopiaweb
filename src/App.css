@@ -25,7 +25,7 @@
     padding-right: 13px;
     padding-top: 8px;
     padding-bottom: 8px;
-    background-color: black;
+    background-color: white;
     border-radius: 10px;
     cursor: pointer;
     color: white;
@@ -40,7 +40,7 @@
     align-items: center;
     justify-content: center;
     align-self: flex-end;
-    background-color: #000000;
+    background-color:#F9F9F9;
     flex-direction: column;
     padding: 20px 0;
 }
@@ -86,8 +86,8 @@
 .hero {
     display: flex;
     flex-direction: column;
-    background: #000;
-    color: #fff;
+    background: #F9F9F9;
+    color: black;
     width: 100%;
     align-items: center;
 }

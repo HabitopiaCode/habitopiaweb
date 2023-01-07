@@ -11,8 +11,8 @@ const Home = (props: Props) => {
   return (
     <div>
         <HeroRow />
-        <BuildingHabitsRow />
-        <ImagineAWorldRow />
+        {/* <BuildingHabitsRow />
+        <ImagineAWorldRow /> */}
         <JoinHabitopiansRow />
     </div>
   )

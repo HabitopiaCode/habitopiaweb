@@ -1,5 +1,7 @@
 import React from "react";
 import HabyButton from "../../HabyButton";
+import HabitopiaLogoWhiteBackground from "../../../assets/habitopia_logo_white_background.png"
+
 
 export default function Header () {
     
@@ -9,7 +11,7 @@ export default function Header () {
           <div className="header_wrap">
             <div>
               <img
-                src="https://uploads-ssl.webflow.com/63624335410aba3df9a7c18f/63624335410abac499a7c1ff_logo%2520dark%2520background-p-500.png"
+                src={HabitopiaLogoWhiteBackground}
                 alt="Habitopia"
               />
             </div>
